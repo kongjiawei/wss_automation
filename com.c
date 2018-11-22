@@ -511,6 +511,7 @@ loop(void)
 		long timeuse = 1000000*( end[round%CMD_NUM].tv_sec - starttime[round%CMD_NUM].tv_sec ) + end[round%CMD_NUM].tv_usec - starttime[round%CMD_NUM].tv_usec;
 		double runtime = timeuse/1000.0;
 		printf("running time is %6.2f \n\n\n",runtime);
+	        sleep(10000);
 
     }
     return LE_SIGNAL;
